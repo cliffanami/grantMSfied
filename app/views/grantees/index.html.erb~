@@ -1,0 +1,37 @@
+<h1>Listing grantees</h1>
+
+<table>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Email</th>
+    <th>MOU</th>
+    <th>Organization</th>
+    <th>Description</th>
+    <th>Project</th>
+    <th>Date</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @grantees.each do |grantee| %>
+  <tr>
+    <td><%= grantee.firstname %></td>
+    <td><%= grantee.lastname %></td>
+    <td><%= grantee.email %></td>
+    <td><%= grantee.memorandumou %></td>
+    <td><%= grantee.organization %></td>
+    <td><%= grantee.description %></td>
+    <td><%= grantee.project_id %></td>
+    <td><%= grantee.date %></td>
+    <td><%= link_to 'Show', grantee %></td>
+    <td><%= link_to 'Edit', edit_grantee_path(grantee) %></td>
+    <td><%= link_to 'Destroy', grantee, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Grantee', new_grantee_path %>

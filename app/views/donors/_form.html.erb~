@@ -1,0 +1,17 @@
+<%=  simple_form_for @donor, :html => { :class => 'form-horizontal' } do |f| %>
+    <%= f.error_notification %>
+    
+    <%= f.input :Name %>
+    <%= f.input :Description, :input_html => { :style => "height: 35px" } %>
+    <%= f.input :funding %>
+    <%= f.input :project_id%>
+    <%= f.input :balance %>
+   
+  
+
+  <div class="form-actions">
+    <%= f.button :submit,"Create", :class => 'btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                donors_path, :class => 'btn' %>
+  </div>
+<% end %>
