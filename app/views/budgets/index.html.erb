@@ -20,7 +20,7 @@
     <% @budgets.each do |budget| %>
       <tr>
         <td><%= link_to budget.id, budget_path(budget) %></td>
-        <td><%= budget.task %></td>
+        <td><%= link_to budget.task, budget_path(budget) %></td>
         <td><%= budget.amount %></td>
         <td><%= budget.description %></td>
         <td><%= budget.status %></td>

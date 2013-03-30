@@ -7,8 +7,12 @@
   <%= f.input :memorandumou %>
   <%= f.input :organization %>
   <%= f.input :description %>
-  <%= f.input :project_id %>
+  <%= f.input :project_id do %>
+   <%= f.collection_select :project_id, Project.order(:name), :id, :name, include_blank: true %>
+   <%end%>
   <%= f.input :date %>
+  
+  
   <div class="form-actions">
     <%= f.button :submit, :class => 'btn-primary' %>
     <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
@@ -18,3 +22,4 @@
 <% end %>
 
 </fieldset>
+

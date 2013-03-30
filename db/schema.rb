@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130203205038) do
+ActiveRecord::Schema.define(:version => 20130321132438) do
 
   create_table "budgets", :force => true do |t|
     t.string   "task"
@@ -74,6 +74,16 @@ ActiveRecord::Schema.define(:version => 20130203205038) do
     t.date     "finish"
     t.datetime "created_at",    :null => false
     t.datetime "updated_at",    :null => false
+    t.string   "image"
+  end
+
+  create_table "sessions", :force => true do |t|
+    t.string   "name"
+    t.string   "email"
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
+    t.string   "encrypted_password"
+    t.string   "salt"
   end
 
   create_table "staffs", :force => true do |t|
@@ -84,6 +94,7 @@ ActiveRecord::Schema.define(:version => 20130203205038) do
     t.string   "attachment"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
+    t.integer  "grantee_id"
   end
 
   create_table "users", :force => true do |t|
@@ -92,5 +103,7 @@ ActiveRecord::Schema.define(:version => 20130203205038) do
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
+
+  add_index "users", ["email"], :name => "index_users_on_email", :unique => true
 
 end

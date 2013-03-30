@@ -4,7 +4,7 @@ class CreateDonors < ActiveRecord::Migration
       t.string :Name
       t.text :Description
       t.float :funding
-      t.integer :project_id
+      t.integer :grant_id
       t.float :balance
 
       t.timestamps

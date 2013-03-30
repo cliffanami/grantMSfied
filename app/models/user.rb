@@ -4,9 +4,15 @@ class User < ActiveRecord::Base
   
   #Relationships
   has_many :progresses
-  
-  validates :email, :presence => true,                
+ 
+ 
+ email_regex = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i 
+ validates :email, :presence => true,                
                   :format => {:with =>email_regex }
+                  #:unique => { :case_sensitive => true }
+
+
+
                   
                   
 end

@@ -7,7 +7,7 @@ class CreateGrantees < ActiveRecord::Migration
       t.string :memorandumou
       t.string :organization
       t.text :description
-      t.integer :project_id
+      t.integer :grant_id
       t.timestamp :date
 
       t.timestamps

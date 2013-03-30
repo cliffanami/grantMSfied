@@ -4,6 +4,8 @@ class Grantee < ActiveRecord::Base
 
   #Relationships
   has_many :projects
+  has_one :donor
+  has_many :staffs
 
   email_regex = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   validates :email, :presence => true,                

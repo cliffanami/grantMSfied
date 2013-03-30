@@ -6,7 +6,7 @@ class CreateBudgets < ActiveRecord::Migration
       t.text :description
       t.string :status
       t.float :receiptno
-      t.integer :project_id
+      t.integer :grant_id
 
       t.timestamps
     end

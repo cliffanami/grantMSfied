@@ -9,7 +9,9 @@
   <%= f.input :donor_id %>
   <%= f.input :ledger_id %>
   <%= f.input :budget_id %>
-  <%= f.input :grantee_id %>
+  <%= f.input :grantee_id do %>
+   <%= f.collection_select :grantee_id, Grantee.order(:organization), :id, :organization, include_blank: true %>
+   <%end%>
   <%= f.input :startdate %>
   <%= f.input :finish %>
   <div class="form-actions">
@@ -18,3 +20,6 @@
                 projects_path, :class => 'btn' %>
   </div>
 <% end %>
+
+
+

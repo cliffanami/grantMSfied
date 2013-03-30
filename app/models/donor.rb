@@ -4,7 +4,8 @@ class Donor < ActiveRecord::Base
   
   
   #Relationships
-  has_many :projects
+  has_many :grants
+  #has_many :grantees
   
   
 end

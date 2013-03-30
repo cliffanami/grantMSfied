@@ -1,7 +1,7 @@
 class CreateProgresses < ActiveRecord::Migration
   def change
     create_table :progresses do |t|
-      t.integer :project_id
+      t.integer :grant_id
       t.string :milestone
       t.string :post
       t.string :status

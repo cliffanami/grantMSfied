@@ -10,7 +10,9 @@ source 'https://rubygems.org'
 
   gem 'simple_form','~> 2.0.0'
   
- gem "bootstrap-sass", "~> 2.2.2.0"
+  gem "bootstrap-sass", "~> 2.2.2.0"
+  
+  gem 'font-awesome-sass-rails','3.0.2.1'
   
   gem 'jquery-rails', '2.0.2'
 # Gems used only for assets and not required
@@ -26,13 +28,17 @@ group :assets do
 
   gem 'uglifier', '>= 1.0.3'
   
-  gem 'twitter-bootstrap-rails'
+  #gem 'bootstrap-sass'
   
-  gem 'less-rails'
+ #gem 'less-rails'
   
   gem 'tabs_on_rails'
   
-  gem 'validates_email_format_of', :git => 'git://github.com/alexdunae/validates_email_format_of.git'
+  gem 'carrierwave'
+  
+  gem 'gmaps4rails'
+  
+  gem "bcrypt-ruby"
   
   
 end

@@ -1,7 +1,8 @@
 class Progress < ActiveRecord::Base
-  attr_accessible :date, :milestone, :post, :post, :project_id, :status, :user_id
+  attr_accessible :date, :milestone, :post, :post, :grant_id, :status, :user_id
+  validates_presence_of :date, :milestone, :post, :post, :grant_id, :status, :user_id => "Cant be blank"
 
-belong_to :user
+belongs_to :user
   
 validates :post, :length => { :maximum => 200 }
 end

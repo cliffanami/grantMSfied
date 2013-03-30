@@ -20,7 +20,7 @@
     <% @progresses.each do |progress| %>
       <tr>
         <td><%= link_to progress.id, progress_path(progress) %></td>
-        <td><%= link_to progress.project_id, users_path %></td>
+        <td><%= progress.grant_id %></td>
         <td><%= progress.milestone %></td>
         <td><%= progress.post %></td>
         <td><%= progress.status %></td>
