@@ -10,16 +10,28 @@
   <dd><%= @grantee.lastname %></dd>
   <dt><strong><%= model_class.human_attribute_name(:email) %>:</strong></dt>
   <dd><%= @grantee.email %></dd>
+<<<<<<< HEAD
   <dt><strong><%= model_class.human_attribute_name(:memorandumou) %>:</strong></dt>
+=======
+  <dt><strong><%= model_class.human_attribute_name(:mou) %>:</strong></dt>
+>>>>>>> updated
   <dd><%= @grantee.memorandumou %></dd>
   <dt><strong><%= model_class.human_attribute_name(:organization) %>:</strong></dt>
   <dd><%= @grantee.organization %></dd>
   <dt><strong><%= model_class.human_attribute_name(:description) %>:</strong></dt>
   <dd><%= @grantee.description %></dd>
   <dt><strong><%= model_class.human_attribute_name(:project_id) %>:</strong></dt>
+<<<<<<< HEAD
   <dd><%= @grantee.project_id %></dd>
   <dt><strong><%= model_class.human_attribute_name(:date) %>:</strong></dt>
   <dd><%= @grantee.date %></dd>
+=======
+  <dd><%= @grantee.grant_id %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:date) %>:</strong></dt>
+  <dd><%= @grantee.date %></dd>
+  
+  
+>>>>>>> updated
 </dl>
 
 <div class="form-actions">

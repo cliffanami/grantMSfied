@@ -1,7 +1,15 @@
 <%- model_class = Budget -%>
 <div class="page-header">
+<<<<<<< HEAD
   <h1><%=t '.title', :default => model_class.model_name.human.pluralize %></h1>
 </div>
+=======
+  <h1><%=t '.title', :default => model_class.model_name.human %> History</h1>
+<div> <b>Initial Allocated amount: <% @project%> </b>
+</div>
+</div>
+
+>>>>>>> updated
 <table class="table table-striped">
   <thead>
     <tr>
@@ -20,8 +28,13 @@
     <% @budgets.each do |budget| %>
       <tr>
         <td><%= link_to budget.id, budget_path(budget) %></td>
+<<<<<<< HEAD
         <td><%= budget.task %></td>
         <td><%= budget.amount %></td>
+=======
+        <td><%= link_to budget.task, budget_path(budget) %></td>
+        <td><%= number_to_currency budget.amount %></td>
+>>>>>>> updated
         <td><%= budget.description %></td>
         <td><%= budget.status %></td>
         <td><%= budget.receiptno %></td>

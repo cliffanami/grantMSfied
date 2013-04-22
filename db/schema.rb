@@ -11,7 +11,11 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(:version => 20130203205038) do
+=======
+ActiveRecord::Schema.define(:version => 20130319193834) do
+>>>>>>> updated
 
   create_table "budgets", :force => true do |t|
     t.string   "task"
@@ -25,8 +29,13 @@ ActiveRecord::Schema.define(:version => 20130203205038) do
   end
 
   create_table "donors", :force => true do |t|
+<<<<<<< HEAD
     t.string   "Name"
     t.text     "Description"
+=======
+    t.string   "name"
+    t.text     "description"
+>>>>>>> updated
     t.float    "funding"
     t.integer  "project_id"
     t.float    "balance"
@@ -53,7 +62,11 @@ ActiveRecord::Schema.define(:version => 20130203205038) do
     t.string   "post"
     t.string   "status"
     t.datetime "date"
+<<<<<<< HEAD
     t.integer  "user_id"
+=======
+    t.integer  "session_id"
+>>>>>>> updated
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
@@ -74,6 +87,19 @@ ActiveRecord::Schema.define(:version => 20130203205038) do
     t.date     "finish"
     t.datetime "created_at",    :null => false
     t.datetime "updated_at",    :null => false
+<<<<<<< HEAD
+=======
+    t.string   "image"
+  end
+
+  create_table "sessions", :force => true do |t|
+    t.string   "name"
+    t.string   "email"
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
+    t.string   "encrypted_password"
+    t.string   "salt"
+>>>>>>> updated
   end
 
   create_table "staffs", :force => true do |t|
@@ -84,6 +110,10 @@ ActiveRecord::Schema.define(:version => 20130203205038) do
     t.string   "attachment"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
+<<<<<<< HEAD
+=======
+    t.integer  "grantee_id"
+>>>>>>> updated
   end
 
   create_table "users", :force => true do |t|
@@ -93,4 +123,9 @@ ActiveRecord::Schema.define(:version => 20130203205038) do
     t.datetime "updated_at", :null => false
   end
 
+<<<<<<< HEAD
+=======
+  add_index "users", ["email"], :name => "index_users_on_email"
+
+>>>>>>> updated
 end

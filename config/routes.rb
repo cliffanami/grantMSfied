@@ -1,4 +1,27 @@
 Grant::Application.routes.draw do
+<<<<<<< HEAD
+=======
+  
+  #get "sign/new"
+  
+  resources :sessions
+  
+  resources :signs, :only => [:new, :create, :destroy]
+
+  #get "sessions/new"
+  
+  match '/signup', :to => 'sessions#new'
+  
+  match '/signin', :to => 'signs#new'
+  match '/signout', :to => 'signs#destroy'
+  match '/signi', :to => 'signs#try'
+
+
+  get "pages/about"
+
+  get "pages/help"
+
+>>>>>>> updated
   resources :grantees
 
 

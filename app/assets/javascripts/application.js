@@ -12,6 +12,14 @@
 //
 //= require jquery
 //= require jquery_ujs
+<<<<<<< HEAD
 //= require twitter/bootstrap
 //= require_tree .
 
+=======
+//= require bootstrap
+//= require_tree .
+
+
+$('.dropdown-toggle').dropdown() 
+>>>>>>> updated

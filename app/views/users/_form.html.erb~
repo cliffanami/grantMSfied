@@ -1,4 +1,5 @@
 <%= simple_form_for @user, :html => { :class => 'form-horizontal' } do |f| %>
+<<<<<<< HEAD
   <div class="control-group">
     <%= f.label :username, :class => 'control-label' %>
     <div class="controls">
@@ -11,6 +12,13 @@
       <%= f.text_field :email, :class => 'text_field' %>
     </div>
   </div>
+=======
+  
+    <%= f.input :username, disabled: true %>
+  
+    <%= f.input :email %>
+    
+>>>>>>> updated
 
   <div class="form-actions">
     <%= f.submit nil, :class => 'btn btn-primary' %>

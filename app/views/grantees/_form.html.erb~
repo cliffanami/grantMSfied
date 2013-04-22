@@ -7,12 +7,29 @@
   <%= f.input :memorandumou %>
   <%= f.input :organization %>
   <%= f.input :description %>
+<<<<<<< HEAD
   <%= f.input :project_id %>
   <%= f.input :date %>
+=======
+  <%= f.input :project_id do %>
+   <%= f.collection_select :project_id, Project.order(:name), :id, :name, include_blank: true %>
+   <%end%>
+  <%= f.input :date %>
+  
+  
+>>>>>>> updated
   <div class="form-actions">
     <%= f.button :submit, :class => 'btn-primary' %>
     <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
                 grantees_path, :class => 'btn' %>
   </div>
+<<<<<<< HEAD
   </fieldset>
 <% end %>
+=======
+  
+<% end %>
+
+</fieldset>
+
+>>>>>>> updated

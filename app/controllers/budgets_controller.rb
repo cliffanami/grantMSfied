@@ -1,4 +1,8 @@
 class BudgetsController < ApplicationController
+<<<<<<< HEAD
+=======
+	before_filter :authenticate, :only =>[:edit, :update]
+>>>>>>> updated
   # GET /budgets
   # GET /budgets.json
   def index
@@ -80,4 +84,13 @@ class BudgetsController < ApplicationController
       format.json { head :no_content }
     end
   end
+<<<<<<< HEAD
+=======
+  
+     private 
+   
+    def authenticate
+     deny_access unless signed_in?
+   end
+>>>>>>> updated
 end

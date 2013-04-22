@@ -6,8 +6,13 @@
   <thead>
     <tr>
       <th><%= model_class.human_attribute_name(:id) %></th>
+<<<<<<< HEAD
       <th><%= model_class.human_attribute_name(:Name) %></th>
       <th><%= model_class.human_attribute_name(:Description) %></th>
+=======
+      <th><%= model_class.human_attribute_name(:name) %></th>
+      <th><%= model_class.human_attribute_name(:description) %></th>
+>>>>>>> updated
       <th><%= model_class.human_attribute_name(:funding) %></th>
       <th><%= model_class.human_attribute_name(:project_id) %></th>
       <th><%= model_class.human_attribute_name(:balance) %></th>
@@ -19,12 +24,22 @@
     <% @donors.each do |donor| %>
       <tr>
         <td><%= link_to donor.id, donor_path(donor) %></td>
+<<<<<<< HEAD
         <td><%= donor.Name %></td>
         <td><%= donor.Description %></td>
         <td><%= donor.funding %></td>
         <td><%= donor.project_id %></td>
         <td><%= donor.balance %></td>
         <td><%=l donor.created_at %></td>
+=======
+        <td><%= donor.name %></td>
+        <td><%= donor.description %></td>
+        <td><%= number_to_currency(donor.funding) %></td>
+        <td><%= donor.project_id %></td>
+        <td><%= number_to_currency donor.balance %></td>
+        <td><%=l donor.created_at %></td>
+
+>>>>>>> updated
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
                       edit_donor_path(donor), :class => 'btn btn-mini' %>

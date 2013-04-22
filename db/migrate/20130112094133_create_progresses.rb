@@ -7,7 +7,11 @@ class CreateProgresses < ActiveRecord::Migration
       t.string :status
       t.string :post
       t.timestamp :date
+<<<<<<< HEAD
       t.integer :user_id
+=======
+      t.integer :session_id
+>>>>>>> updated
 
       t.timestamps
     end

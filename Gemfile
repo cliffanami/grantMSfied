@@ -10,7 +10,13 @@ source 'https://rubygems.org'
 
   gem 'simple_form','~> 2.0.0'
   
+<<<<<<< HEAD
  gem "bootstrap-sass", "~> 2.2.2.0"
+=======
+  gem "bootstrap-sass", "~> 2.2.2.0"
+  
+  gem 'font-awesome-sass-rails','3.0.2.1'
+>>>>>>> updated
   
   gem 'jquery-rails', '2.0.2'
 # Gems used only for assets and not required
@@ -26,6 +32,7 @@ group :assets do
 
   gem 'uglifier', '>= 1.0.3'
   
+<<<<<<< HEAD
   gem 'twitter-bootstrap-rails'
   
   gem 'less-rails'
@@ -38,6 +45,34 @@ group :assets do
 end
 
 
+=======
+  #gem 'bootstrap-sass'
+  
+ #gem 'less-rails'
+  
+  gem 'tabs_on_rails'
+  
+ # gem 'carrierwave'
+  
+  gem 'gmaps4rails'
+  
+  gem "bcrypt-ruby"
+  
+ gem 'erubis','>=2.7.0'
+  
+  
+
+
+
+  
+end
+
+group :development do 
+  
+  gem 'faker', '>= 0.3.1'
+  
+end  
+>>>>>>> updated
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

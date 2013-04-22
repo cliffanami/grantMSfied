@@ -4,6 +4,7 @@
 </div>
 
 <dl class="dl-horizontal">
+<<<<<<< HEAD
   <dt><strong><%= model_class.human_attribute_name(:Name) %>:</strong></dt>
   <dd><%= @donor.Name %></dd>
   <dt><strong><%= model_class.human_attribute_name(:Description) %>:</strong></dt>
@@ -16,6 +17,24 @@
   <dd><%= @donor.balance %></dd>
 </dl>
 
+=======
+  <dt><strong><%= model_class.human_attribute_name(:name) %>:</strong></dt>
+  <dd><%= @donor.name %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:description) %>:</strong></dt>
+  <dd><%= @donor.description %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:funding) %>:</strong></dt>
+  <dd><%=number_to_currency @donor.funding %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:project_id) %>:</strong></dt>
+  <dd><%= @donor.project_id %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:balance) %>:</strong></dt>
+  <dd><%= number_to_currency @donor.balance %></dd>
+</dl>
+
+
+
+
+
+>>>>>>> updated
 <div class="form-actions">
   <%= link_to t('.back', :default => t("helpers.links.back")),
               donors_path, :class => 'btn'  %>

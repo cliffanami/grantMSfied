@@ -18,7 +18,11 @@ development:
   database: grant_development
   pool: 5
   username: cliff	
+<<<<<<< HEAD
   password: anarmy90
+=======
+  password: anami
+>>>>>>> updated
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
@@ -44,12 +48,21 @@ test:
   database: grant_test
   pool: 5
   username: cliff
+<<<<<<< HEAD
   password: anarmy90
+=======
+  password: anami
+>>>>>>> updated
 
 production:
   adapter: postgresql
   encoding: unicode
   database: grant_production
   pool: 5
+<<<<<<< HEAD
   username: grant
   password:
+=======
+  username: cliff
+  password: anami
+>>>>>>> updated

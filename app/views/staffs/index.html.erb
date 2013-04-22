@@ -1,6 +1,10 @@
 <%- model_class = Staff -%>
 <div class="page-header">
+<<<<<<< HEAD
   <h1><%=t '.title', :default => model_class.model_name.human.pluralize %></h1>
+=======
+  <h1><%=t '.title', :default => model_class.model_name.human %></h1>
+>>>>>>> updated
 </div>
 <table class="table table-striped">
   <thead>
@@ -11,6 +15,10 @@
       <th><%= model_class.human_attribute_name(:project_id) %></th>
       <th><%= model_class.human_attribute_name(:description) %></th>
       <th><%= model_class.human_attribute_name(:attachment) %></th>
+<<<<<<< HEAD
+=======
+      <th><%= model_class.human_attribute_name(:grantee_id) %></th>
+>>>>>>> updated
       <th><%= model_class.human_attribute_name(:created_at) %></th>
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
@@ -24,6 +32,10 @@
         <td><%= staff.project_id %></td>
         <td><%= staff.description %></td>
         <td><%= staff.attachment %></td>
+<<<<<<< HEAD
+=======
+        <td><%= staff.grantee_id %></td>
+>>>>>>> updated
         <td><%=l staff.created_at %></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),

@@ -1,4 +1,5 @@
 <%= simple_form_for @progress, :html => { :class => 'form-horizontal' } do |f| %>
+<<<<<<< HEAD
  
     <%= f.input :project_id
     <%= f.input :milestone
@@ -6,6 +7,16 @@
     <%= f.input :status
     <%= f.input :date, 
     <%= f.input :user_id, 
+=======
+
+ 
+    <%= f.input :project_id %>
+    <%= f.input :milestone %>
+    <%= f.input :post %>
+    <%= f.input :status %>
+    <%= f.input :date %>
+    <%= f.input :user_id %>
+>>>>>>> updated
 
   <div class="form-actions">
     <%= f.submit nil, :class => 'btn btn-primary' %>

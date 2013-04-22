@@ -3,7 +3,11 @@ class ProjectsController < ApplicationController
   # GET /projects.json
   def index
     @projects = Project.all
+<<<<<<< HEAD
 
+=======
+    # @json = @projects.to_gmaps4rails
+>>>>>>> updated
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @projects }
@@ -36,6 +40,10 @@ class ProjectsController < ApplicationController
   def edit
     @project = Project.find(params[:id])
   end
+<<<<<<< HEAD
+=======
+  
+>>>>>>> updated
 
   # POST /projects
   # POST /projects.json

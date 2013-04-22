@@ -5,7 +5,11 @@
 <table class="table table-striped">
   <thead>
     <tr>
+<<<<<<< HEAD
       <th><%= model_class.human_attribute_name(:id) %></th>
+=======
+     <!-- <th><%= model_class.human_attribute_name(:id) %></th>-->
+>>>>>>> updated
       <th><%= model_class.human_attribute_name(:project_id) %></th>
       <th><%= model_class.human_attribute_name(:milestone) %></th>
       <th><%= model_class.human_attribute_name(:post) %></th>
@@ -19,8 +23,13 @@
   <tbody>
     <% @progresses.each do |progress| %>
       <tr>
+<<<<<<< HEAD
         <td><%= link_to progress.id, progress_path(progress) %></td>
         <td><%= link_to progress.project_id, users_path %></td>
+=======
+      <!--  <td><%= link_to progress.id, progress_path(progress) %></td>-->
+        <td><%= progress.project_id %></td>
+>>>>>>> updated
         <td><%= progress.milestone %></td>
         <td><%= progress.post %></td>
         <td><%= progress.status %></td>
