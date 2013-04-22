@@ -1,0 +1,10 @@
+class RenameMyTable < ActiveRecord::Migration
+  def self.up
+    rename_table :projects, :grants
+  end
+  
+   def self.up
+     rename_table :projects, :grants
+   end  
+
+end

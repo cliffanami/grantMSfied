@@ -1,0 +1,9 @@
+module ProjectsHelper
+
+<%= tabs_tag do |tab| %>
+  <%= tab.progress      'Homepage', progresses_path %>
+  <%= tab.progress 'Dashboard', progresses_path %>
+  <%= tab.progress  'Account', progresses_path %>
+<% end %>
+
+end

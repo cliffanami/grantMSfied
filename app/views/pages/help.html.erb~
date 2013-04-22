@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Grant Management System| <%= @title %></title>
+<%= csrf_meta_tag %>
+
+</head>
+<body></body>
+</html>

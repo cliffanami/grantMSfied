@@ -1,0 +1,25 @@
+<%= simple_form_for @project, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :name %>
+  <%= f.input :location %>
+  <%= f.input :latitude %>
+  <%= f.input :longitude %>
+  <%= f.input :balance %>
+  <%= f.input :amount, label: false%>
+  <%= f.input :accountnumber %>
+  <%= f.input :donor_id %>
+  <%= f.input :ledger_id %>
+  <%= f.input :budget_id %>
+  <%= f.input :grantee_id do %>
+   <%= f.collection_select :grantee_id, Grantee.order(:organization), :id, :organization, include_blank: true %>
+   <%end%>
+  <%= f.input :startdate %>
+  <%= f.input :finish %>
+  <div class="form-actions">
+    <%= f.button :submit, :class => 'btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                projects_path, :class => 'btn' %>
+  </div>
+<% end %>
+
+
+

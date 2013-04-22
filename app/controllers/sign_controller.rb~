@@ -1,0 +1,26 @@
+class SignsController < ApplicationController
+  def new
+      @title = "Sign in"
+  end
+  
+  def create
+      session = Session.authenticate(params[:sign][:email], params[:sign][:password])
+       if user.nil?
+     flash.now[:error] = "Invalid email/password combination."
+     
+     @title = "Sign in"
+     
+     render 'new'
+     
+     else
+       sign_in user
+       redirect_to user
+
+     end
+
+     
+  end
+  
+  def destroy
+  end
+end
